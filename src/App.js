@@ -28,7 +28,7 @@ function App() {
       <Header />
       <Routes>
         <Route path={"/"} element={<Home/>}/>
-        <Route path={"spidey"} element={<Spidey/>}/>            
+        <Route path={"personajes"} element={<Spidey/>}/>            
       </Routes>  
     </Router>
 
