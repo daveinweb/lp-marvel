@@ -1,3 +1,7 @@
+# Landing React API Marvel
+
+This project contains a Landing Page made with React & axios, showing characters of Marvel Universe of Super Heroes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
