@@ -6,7 +6,7 @@ const Header = () => {
     <div className='App-header'>
         <ul className='menu'>
             <a className='i-link' href="/">
-              <img src={logo} width={100} className='logo' alt='Logo' />
+              <img src={logo} width={80} className='logo' alt='Logo' />
             </a>
             <li className='i-link'>
                <a href="spidey">

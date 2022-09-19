@@ -11,11 +11,9 @@ function App() {
 
   let image_ratio = 'standard_fantastic'
 
-
-
   const [characters, setCharacters] = useState([])
 
-  //Hooks
+  //Uso de useEffect con axios
   useEffect (() => {
     axios.get('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=32deddddef41cd252fdfa7d757c2656d&hash=ac91760fc3d1cf67e615817a3ee560a6').then(res=>{
         setCharacters(res.data.data.results)
@@ -35,29 +33,10 @@ function App() {
     </Router>
 
     {characters.map(char=> (
-
-      
-        // <div className='heu'>
-        //   <h1>{char.name}</h1>
-        //   <img src={`${char.thumbnail.path}/${image_ratio}.${char.thumbnail.extension}`} alt="hero" />
-        // </div>
-
-
-      <div class="container">
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-            <img src={`${char.thumbnail.path}/${image_ratio}.${char.thumbnail.extension}`} alt="hero"/>
-              <h3>{char.name}</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>{char.description}</p>
-            </div>
-          </div>
+        <div className='heu'>
+        <h1>{char.name}</h1>
+        <img className='hero' src={`${char.thumbnail.path}/${image_ratio}.${char.thumbnail.extension}`} alt="hero" />
         </div>
-      </div>
     
       ))}
     </div>

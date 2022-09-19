@@ -2,7 +2,9 @@ import React from 'react'
 
 const Spidey = () => {
   return (
-    <div>Spidey</div>
+    <div>
+      <h1>Personajes de Marvel</h1>  
+    </div>
   )
 }
 
